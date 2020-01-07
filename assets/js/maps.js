@@ -11,8 +11,8 @@ var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
             var locations = [
              { lat: 40.408183, lng: -3.648301 }, 
              { lat: 40.48225, lng: -3.711614 }, 
-             { lat: 40.3499985, lng: -3.7}, 
-             { lat: 41.374998, lng: 2.151645}
+             { lat: 40.3499985, lng: -3.766876 },
+             { lat: 40.4145661, lng: -3.7029622 },
              ];
             var markers = locations.map(function(location, i) {
                 return new google.maps.Marker({
