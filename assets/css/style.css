@@ -624,18 +624,13 @@ button:hover {
   height:0;
 }
 
-.map-container iframe{
-  left:0;
-  top:0;
-  height:100%;
-  width:100%;
-  position:absolute;
-}
 
 .view-card-header {
   text-align: center;
   margin-top: 20px;
 }
+
+div#map {min-height: 360px;}
 
 
 
