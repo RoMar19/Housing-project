@@ -1,4 +1,4 @@
-fuunction initMap() {
+function initMap() {
     var map = new google.maps.Map(document.getElemetById("map"), {
       zoom: 3,
       center: {
@@ -6,7 +6,6 @@ fuunction initMap() {
           lng: -3.7025599
       } 
     });
-}
 
 var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
             var locations = [
@@ -23,4 +22,4 @@ var labels = "ABCDEFGHIJKLMONPQRSTUVWXYZ";
             });
             var markerCluster = new MarkerClusterer(map, markers, {
                 imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
-        }
+            }      
