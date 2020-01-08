@@ -154,7 +154,7 @@
   </div>
 </div>
 
-
+<form onsubmit="return sendMail(this);>
 <div class="container-fuid">
   <h1 class="contact">Contact Us!</h1>
   <div class="row-contact">
@@ -172,7 +172,6 @@
             <input type="text" id="name" name="name" placeholder="Your name.. " required>
           </div>
         </div>
-<form onsubmit="return sendMail(this); method="POST">
         <div class="form-row">
           <div class="col-25">
             <label for="lname">Email</label>
@@ -187,11 +186,11 @@
             <label for="house">Type of House</label>
             </div>
             <div class="col-75">
-            <select id="type" class="house " name="typeofhouse">
+            <select id="house" name="typeofhouse">
                   <option value="apartment">Apartment</option>
                   <option value="studio">Studio</option>
                   <option value="private room">Private Room</option>
-                  <option value="private room WC-Shower"Private Room with Bathroom</option>
+                  <option value="private room WC-Shower">Private Room with Bathroom</option>
                 </select>
                 </div>
           </div>
