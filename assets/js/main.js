@@ -1,11 +1,9 @@
-const baseURL = "https//????????"
 
-
-function getData(type, cb){
+function getData(url, cb){
 var xhr = new XMLHttpRequest;
 }
 
-xhr.open("GET", baseRUL + type + "/");
+xhr.open("GET", url);
 xhr.send();
 
 xhr.onreadystatechange = function(){
@@ -23,13 +21,29 @@ function getTableHeaders(obj){
     return(`<tr> ${TableHeaders} </tr>`);
     }
 
+function generatePaginationBottons(next, prev){
+    if (next && prev){
+        return `<button onclick="writeToDocument('${prev}')">Previous</button>`;
+               `<button onclick="writeToDocument('${next}')">Next</button>`;
+    } else if (next && !prev){
+        return `<button onclick="writeToDocument('${next}')">Next</button>`;
+    } else if (!next && prev){
+        return `<button onclick="writeToDocument('${prev}')">Previous</button>`;
+    }
+}
 
-function writeToDocument(type){
+function writeToDocument(url){
     var tableRows = [];
     var el = document.getElementById("data");
     el.innerHTML = "";
-    getData(type, function(data){
-        data = data.results;
+    getData(url, function(data){
+        var pagination;
+        if (data.next || data.previous){
+            pagination = generatePaginationBottons(data.next, data.previous)
+        }
+    });
+
+     data = data.results;
         var tableHeaders = getTableHeaders(data[0]);
         data.forEach(function(item) {
             var dataRow = [];
@@ -41,6 +55,5 @@ function writeToDocument(type){
             });
                 tableRows.push(`<tr>${dataRow}</tr>`);
         });
-        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>`;
-    });
+        el.innerHTML = `<table>${tableHeaders}${tableRows}</table>${pagination}`;
 }
