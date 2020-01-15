@@ -1,7 +1,6 @@
 function sendMail(contactForm) {
     emailjs.send("gmail", "inmadrid_contact_form", 
-    {"rentout_apartment":"Please contact me to rent my house out.","typeof_house":"Studio",
-    "from_name":"Elena de Troya","from_email":"rmf1312@hotmail.com"})
+    {"rentout_apartment":"","typeof_house":"","from_name":"","from_email":""})
     .then(
         function(response) {
             console.log("SUCCESS", response);
@@ -11,3 +10,9 @@ function sendMail(contactForm) {
         }
     );
     return false; }// To block from loading a new page
+
+
+
+
+
+
