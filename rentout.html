@@ -19,8 +19,12 @@
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
   <!-- Emailjs -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
-  <script type="text/javascript">(function(){ emailjs.init("user_beHlAh5GReL0LXJKxQclh");});</script>
-</head>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("user_beHlAh5GReL0LXJKxQclh");
+   })();
+  </script>   
+  </head>
 
 
 <!--Navbar-->
@@ -154,7 +158,7 @@
   </div>
 </div>
 
-<form onsubmit="return sendMail(this);>
+<form onsubmit="return sendMail(this)"; method="POST">
 <div class="container-fuid">
   <h1 class="contact">Contact Us!</h1>
   <div class="row-contact">
@@ -163,7 +167,7 @@
     </div>  
     <div class="col-xs-12 col-sm-6">
       
-      <form action="/action_page.php">
+      
         <div class="form-row">
           <div class="col-25">
             <label for="fname">Name</label>
@@ -222,7 +226,6 @@
             <p><em>After check in your details entered we will contact you for a visit to your house.</em></p>
           </div>
           </div>
-      </form>
     </div>
   </div>
 </div>

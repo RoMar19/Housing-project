@@ -1,10 +1,7 @@
 function sendMail(contactForm) {
     emailjs.send("gmail", "inmadrid_contact_form", 
-    {"from_name": contactForm.name.value,
-    "from_email": contactForm.emailaddress.value,
-    "rentout_apartment": contactForm.summary.value,
-    "typeof_house": contactForm.type.value
-    })
+    {"rentout_apartment":"Please contact me to rent my house out.","typeof_house":"Studio",
+    "from_name":"Elena de Troya","from_email":"rmf1312@hotmail.com"})
     .then(
         function(response) {
             console.log("SUCCESS", response);
