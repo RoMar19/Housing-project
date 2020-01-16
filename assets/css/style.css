@@ -600,6 +600,10 @@ button:hover {
   text-align: center;
 }
 
+.bed-room, .bath-room, .rent-price  {
+    text-align: center;
+}
+
 .col-12 {
   margin-top: 50px;
   display: flex;
