@@ -1,37 +1,38 @@
-{
-"area": {
-"options": [
-"Center",
-"North",
-"South",
-"East",
-"West"
-],
-}
-"type": {
-"options": [
-"Apartment",
-"Private Room",
-"Studio"
-],
-}
-"bedrooms": {
-"options": [
-"1 Bedroom",
-"2 Bedrooms",
-"3 Bedrooms"
-],
-}
-"bathrooms": {
-"options": [
-"1 Bathroom WC/Shower",
-"2 Bathrooims WC/Shower"
-"Private bathroom"
-],
-}
-"rent": {
-"options": [
-"Min. 300 Eur",
-"Max. 1800 Eur",
+[
+  {
+    "type": "Apartment",
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": "Madrid",
+    "price": 1500,
+    "listing_title": "Apartment in the Barrio del Pilar",
+    "listing_text": "This is an apartment in the north are of Madrid with 2 bedrooms and 1 complete bathroom"
+  },
+  {
+    "type": "Studio",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": "Studio en Plaza Eliptica",
+    "price": 900,
+    "listing_title": "Studio in for 1 or 2 persons",
+    "listing_text": "This is cosy studio with complete bathroom"
+  },
+  {
+    "type": "Private room with bathroom",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": "Private room in Villaverde",
+    "price": 500,
+    "listing_title": "Room in a share house of 3 bedrooms, private bath in the room",
+    "listing_text": "This is an apartment in the old indstrial and renovated area of Villaverde"
+  },
+  {
+    "type": "Apartment",
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": "Apartment with 1 bedroom in Tribunal",
+    "price": 1200,
+    "listing_title": "Apartmebt with 1 bedroom and complete bathroom",
+    "listing_text": "This is an apartment in the city center"
+  }
 ]
-}
