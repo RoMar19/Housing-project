@@ -2,19 +2,20 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>InMadrid / Alojamiento para Estudiantes y jóvenes Profesionales </title>
-  <!--Bootstrap CSS-->
+  <title>InMadrid / Housing for Young Professionals and Students</title>
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!--GoogleFonts-->
+  <!-- GoogleFonts -->
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
-  <!--FontAwesome Icons-->
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <!--Logo/Icon on Tab-->
-  <link rel="icon" href="Assets/Images/favicon-32x32.png" type="image/png" />
-  <!--Style CSS-->
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Logo/Icon on Tab  -->
+  <link rel="icon" href="assets/Images/favicon-32x32.png" type="image/png" />
+  <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 </head>
 
@@ -242,11 +243,30 @@
     <div class="col-md-3">
       <div class="gallery">
         <a target="_blank" href="assets/Images/bedroom.jpg">
-      <img src="assets/Images/bedroom.jpg" alt="Dormitorio" width="300" height="150">
+      <img src="assets/Images/bedroom.jpg" alt="Bedroom" width="300" height="150">
     </a>
-        <div class="desc">Dormitorio - Apartamento</div>
-      </div>
-    </div>
+        <div class="desc">Apartmento</div>
+        <span>
+        <div class="bed-room">
+        <i class="fa fa-bed"></i> 2 Dormitorios
+        </div>
+        <div class="bath-room">
+        <i class="fa fa-bath"></i> 1 Baño
+        </div>
+        </span>
+        <span>
+        <div class="rent-price">
+        Precio: 1.500 €
+        </span>
+        <span><br>
+        <i class="fa fa-map-marker"></i>
+                Madrid, Norte
+        </span> 
+        </div>
+        </div>
+        </div>
+    
+   
 
 
     <div class="col-md-3">
@@ -254,8 +274,25 @@
         <a target="_blank" href="assets/Images/livingroom.jpg">
       <img src="assets/Images/livingroom.jpg" alt="Livingroom" width="300" height="150">
     </a>
-        <div class="desc">Salón- Apartamento</div>
-      </div>
+        <div class="desc">Estudio</div>
+        <span>
+        <div class="bed-room">
+        <i class="fa fa-bed"></i> 1 Dormitorio
+        </div>
+        <div class="bath-room">
+        <i class="fa fa-bath"></i> 1 Baño
+        </div>
+        </span>
+        <span>
+        <div class="rent-price">
+        Precio: 900 €
+        </span>
+         <span><br>
+        <i class="fa fa-map-marker"></i>
+                Madrid, Oeste
+        </span> 
+        </div>
+        </div>
     </div>
 
 
@@ -264,7 +301,24 @@
         <a target="_blank" href="assets/Images/bathroom.jpg">
       <img src="assets/Images/bathroom.jpg" alt="Bathroom Apartment" width="300" height="150">
     </a>
-        <div class="desc">Baño - Apartamento</div>
+        <div class="desc">Habitación Privada con Baño </div> 
+        <span>
+        <div class="bed-room">
+        <i class="fa fa-bed"></i> 1 Dormitorio
+        </div>
+        <div class="bath-room">
+        <i class="fa fa-bath"></i> 1 Baño
+        </div>
+        </span>
+        <span>
+        <div class="rent-price">
+        Precio: 500 €
+        </span>
+        <span><br>
+        <i class="fa fa-map-marker"></i>
+                Madrid, Sur
+        </span><br>
+        </div>
       </div>
     </div>
 
@@ -274,13 +328,33 @@
         <a target="_blank" href="assets/Images/studio.jpg">
       <img src="assets/Images/studio.jpg" alt="Studio" width="300" height="150">
     </a>
-        <div class="desc">Estudio - Apartamento</div>
-      </div>
+        <div class="desc">Apartmento</div>
+        <span>
+        <div class="bed-room">
+        <i class="fa fa-bed"></i> 1 Dormitorio
+        </div>
+        <div class="bath-room">
+        <i class="fa fa-bath"></i> 1 Baño
+        </div>
+        </span>
+        <span>
+        <div class="rent-price">
+        Precio: 1.200 €
+        </span>
+        <span><br>
+        <i class="fa fa-map-marker"></i>
+                Madrid, Centro
+        </span> 
     </div>
   </div>
 </div>
+</div>
+</div>
  
  
+ 
+ 
+
 <!--Google map-->
 
 <div class="container-map">
@@ -288,17 +362,13 @@
     <div class="col-md-12">
       <div class="card card-cascade narrower">
         <div class="view-card-header">
-          <h5>Búsqueda por Mapa</h5>
+          <h5>Search by Map</h5>
         </div>
         <div class="card-body card-body-cascade text-center">
-          <div id="map-container-google-9" class="z-depth-1-half map-container" style="height: 300px">
-            <iframe src="https://maps.google.com/maps?q=Madryt&t=&z=13&ie=UTF8&iwloc=&output=embed" style="border:0" allowfullscreen></iframe>
+          <div id="map"></div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</div>
 
 
 <!--Footer-->
@@ -349,6 +419,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOLtR_9szBl7EVGkkAt3_UeWUiW4whytQ&callback=initMap"></script>
+  <script src="assets/js/maps.js"></script>
 
 </body>
 
