@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width; initial-scale=1.0;">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>InMadrid / Housing for Young Professionals and Students</title>
+  <title>InMadrid / Alojamiento para Estudiantes y jóvenes Profesionales </title>
   <!--Bootstrap CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!--GoogleFonts-->
@@ -23,7 +23,7 @@
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="index.html"><strong>InMadrid</strong></a>
+  <a class="navbar-brand" href="index.ES.html"><strong>InMadrid</strong></a>
 <!--Collapse button-->  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -33,48 +33,47 @@
     <ul class="navbar-nav mr-auto">
 <!--Links-->
       <li class="nav-item">
-        <a class="nav-link" href="searchapartment.html">Search Apartment</a>
+        <a class="nav-link" href="searchapartment.ES.html">Encuentra Apartamento</a>
       </li>
  <!--Dropdown-->     
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="rentout.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
-          For Landlords
-        </a>
+        <a class="nav-link dropdown-toggle" href="rentout.ES.html" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+        Para Propietarios</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="rentout.html">Rent Out</a>
-          <a class="dropdown-item" href="homestaging.html">Home Staging</a>
+          <a class="dropdown-item" href="rentout.ES.html">Alquila tu propiedad</a>
+          <a class="dropdown-item" href="homestaging.ES.html">Home Staging</a>
         </div>
       </li>
     </ul>
 <!--Language options-->
           <ul class="navbar-nav">
             <li class="nav-item">
-            <a class="nav-link" id="flag" href="index.ES.html">
-          <img src="assets/Images/spain.png" alt="Spanish-flag" width="18"> ES
+            <a class="nav-link" id="flag" href="index.html">
+          <img src="assets/Images/united-kingdom.png" alt="UK-flag" width="18"> UK
             </a>
             </li>
 <!--Button trigger modal-->
             <li class="nav-item">
             <button type="button" class="btn btn-sm navbar-btn" data-toggle="modal" data-target="#LogInModal">
-            Sign In
+            Iniciar sesión
             </button>
             <span></span>
             </li>
             <li class="nav-item">
             <button type="button" class="btn btn-sm navbar-btn" data-toggle="modal" data-target="#SignUpModal">
-            Sign Up
+            Registrarse
             </button>
             </li>
           </ul>
   </div>
 </nav>
-
-    <!--Sign In Modal-->
+    
+<!--LogIn Modal-->
   <div class="modal fade" id="LogInModal" tabindex="-1" role="dialog" aria-labelledby="LogInModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">Sign In</h4>
+            <h4 class="modal-title w-100 font-weight-bold">Iniciar sesión</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -83,30 +82,30 @@
             <div class="md-form mb-5">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <input type="email" id="defaultForm-email" class="form-control validate">
-              <label data-error="wrong" data-success="right" for="defaultForm-email">Your email</label>
+              <label data-error="wrong" data-success="right" for="defaultForm-email">Tu email</label>
             </div>
 
             <div class="md-form mb-4">
               <i class="fa fa-lock" aria-hidden="true"></i>
               <input type="password" id="defaultForm-pass" class="form-control validate">
-              <label data-error="wrong" data-success="right" for="defaultForm-pass">Your password</label>
+              <label data-error="wrong" data-success="right" for="defaultForm-pass">Tu clave de acceso</label>
             </div>
 
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button class="btn btn-default">Sign In</button>
+            <button class="btn btn-default">Iniciar sesión</button>
           </div>
         </div>
       </div>
     </div>
-
+    
 
     <!--SignUp Modal-->
-    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModal" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header text-center">
-            <h4 class="modal-title w-100 font-weight-bold">SignUp</h4>
+            <h4 class="modal-title w-100 font-weight-bold">Registrarse</h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -115,70 +114,71 @@
             <div class="md-form mb-5">
               <i class="fa fa-user" aria-hidden="true"></i>
               <input type="text" id="orangeForm-name" class="form-control validate">
-              <label data-error="wrong" data-success="right" for="orangeForm-name">Your name</label>
+              <label data-error="wrong" data-success="right" for="orangeForm-name">Tu nombre</label>
             </div>
             <div class="md-form mb-5">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <input type="email" id="orangeForm-email" class="form-control validate">
-              <label data-error="wrong" data-success="right" for="orangeForm-email">Your email</label>
+              <label data-error="wrong" data-success="right" for="orangeForm-email">Tu email</label>
             </div>
 
             <div class="md-form mb-4">
               <i class="fa fa-lock" aria-hidden="true"></i>
               <input type="password" id="orangeForm-pass" class="form-control validate">
-              <label data-error="wrong" data-success="right" for="orangeForm-pass">Your password</label>
+              <label data-error="wrong" data-success="right" for="orangeForm-pass">Tu clave de acceso</label>
             </div>
 
           </div>
           <div class="modal-footer d-flex justify-content-center">
-            <button class="btn btn-sm">SignUp</button>
+            <button class="btn btn-sm">Regístrate</button>
           </div>
         </div>
       </div>
     </div>
-
-
+    
+ 
 <!-- Steps Home Staging -->
 
   <div class="homestaging-container">
     <div class="homestaging-jumbotron">
-      <h2>Rent out faster and for a better price Home Staging your place.</h2>
-      <p>First impressions are key for renting a house!!!</p>
+      <h2>Alquila más rápido y a mejor precio estilizando tu casa.</h2>
+      <p>¡¡¡La primera impresion es la clave del alquiler!!!</p>
     </div>
   </div>
 
   <div class="container-steps">
-      <h2 class="text-uppercase" align="center"> Steps to Staging your place:</h2>
+      <h2 class="text-uppercase" align="center"> Pasos para estilizar tu propiedad:</h2>
   </div>
 
 
   <div class="steps">
     <div class="container left">
       <div class="content">
-        <h3>Step 1<i class="fa fa-eye"></i></h3>
-        <p>We will go to your house and decide which rooms could use a make-over/styling.</p>
-        <p><a class="btn btn-sm" href="rentout.html">Read More...</a></p>
+        <h3>Paso 1<i class="fa fa-eye"></i></h3>
+        <p>Vamos a tu propiedad y decidimos que habitaciones necesitan estilizarse/actualizarse.</p>
+        <p><a class="btn btn-sm" href="rentout.ES.html">Más info...</a></p>
       </div>
     </div>
 
     <div class="container right">
       <div class="content">
-        <h3>Step 2<i class="fa fa-tasks"></i></h3>
-        <p>We make a proposal based on one of our three concepts:</p>
+        <h3>Paso 2<i class="fa fa-tasks"></i></h3>
+        <p>Haremos una propuesta basada en 3 conceptos:</p>
         <ol type="1">
-          <li>Only styling advice</li><br>
-          <li>We will style your house with your furniture and our props (books, plants, accessories).</li><br>
-          <li>Full take over (furniture, lamps, accessories)</li><br>
+          <li>Solamente te aconsejamos.</li><br>
+          <li>Nosotros estilizamos tu casa con tu mobiliario y nuestras propuesta
+          (libros, plantas, accesorios).</li><br>
+          <li>Reforma complpeta (pintura, mobiliario, lámparas, accesorios...)</li><br>
         </ol>
-        <p><a class="btn btn-sm" href="rentout.html">Read More...</a></p>
+        <p><a class="btn btn-sm" href="rentout.ES.html">Más info...</a></p>
       </div>
     </div>
 
     <div class="container left">
       <div class="content">
-        <h3>Step 3<i style='font-size:28px' class='fa'>&#xf2b5;</i></h3>
-        <p>We will shoot your house and make it ready for rent out.</p>
-        <p><a class="btn btn-sm" href="rentout.html">Read More...</a></p>
+        <h3>Paso 3<i style='font-size:28px' class='fa'>&#xf2b5;</i></h3>
+        <p>Dejamos la casa lista para alquilar.</p>
+        <p><a class="btn btn-sm" href="rentout.ES.html">Más info...</a></p>
       </div>
     </div>
   </div>
@@ -188,28 +188,28 @@
   <!-- Projects Section -->
 
   <div class="projects-container" id="projects" align="center">
-    <h3 class="border-bottom border-light-grey padding-16 text-uppercase">Projects:</h3>
+    <h3 class="border-bottom border-light-grey padding-16 text-uppercase">Proyectos:</h3>
 
     <div class="projects-row">
       
       <div class="col-md-6">
-        <div class="display-container">Sittingroom <br>Before /After</div>
-          <img src="assets/Images/Salonhomestaging.jpg" alt="Sittingroom" width="300" height="150">
+        <div class="display-container">Salón <br>Antes / Después</div>
+          <img src="Assets/Images/Salonhomestaging.jpg" alt="Sittingroom" width="300" height="150">
       </div>
       
       <div class="col-md-6">
-        <div class="display-container">Bedroom <br>Before /After</div>
-          <img src="assets/Images/Bedroomhomestaging.jpg" alt="Bedroom" width="300" height="150">
+        <div class="display-container">Dormitorio <br>Antes / Después</div>
+          <img src="Assets/Images/Bedroomhomestaging.jpg" alt="Bedroom" width="300" height="150">
       </div>
   
       <div class="col-md-6">
-        <div class="display-container">Bathroom <br>Before /After</div>
-          <img src="assets/Images/Bathroomhomestaging.jpg" alt="Bathroom" width="300" height="150">
+        <div class="display-container">Baño <br>Antes / Después</div>
+          <img src="Assets/Images/Bathroomhomestaging.jpg" alt="Bathroom" width="300" height="150">
       </div>
   
       <div class="col-md-6">
-        <div class="display-container">Kitchen <br>Before /After</div>
-          <img src="assets/Images/Kitchenhomestaging.jpg" alt="Kitchen" width="300" height="150">
+        <div class="display-container">Cocina <br>Antes / Después</div>
+          <img src="Assets/Images/Kitchenhomestaging.jpg" alt="Kitchen" width="300" height="150">
       </div>
         
     </div>
@@ -217,48 +217,48 @@
 
 
 
-  <!--Footer-->
+
+<!--Footer-->
   <footer class="container-footer">
 
     <div class="footer-left">
       <div class="col">
-        <h3><strong>InMadrid</strong></h3>
-        <p class="footer-company-name">Housing for Students and Young Professionals.</p>
-        <div class="footer-icons">
-          <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
-          <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
-          <a href="https://www.instagram.com/?hl=es"><i class="fa fa-instagram"></i></a>
-        </div>
+            <h3><strong>InMadrid</strong></h3>
+            <p class="footer-company-name">Soluciones de alojamiento para Estudiantes y jóvenes Profesionales</p>
+          <div class="footer-icons">
+              <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=es"><i class="fa fa-instagram"></i></a>
+          </div>
       </div>
     </div>
-
+       
 
     <div class="footer-center">
       <div class="col">
-        <p class="footer-company-about">
-          <span>About the company</span>Rentals for mid/long stay in Madrid, focus on Students and young Professionals.<br><i class="fa fa-ellipsis-h"></i><br> Home Staging and Property Management services for Owners who desire rent out apartments in
-          Madrid.</p>
+          <p class="footer-company-about">
+            <span>Sobre nosotros</span>Alquileres en Madrid por meses para Estudiantes y jóvenes Profesionales.<br><i class="fa fa-ellipsis-h"></i><br>
+          Servicios de gestión y Home Staging para propietarios que desean alquilar su propiedad en Madrid.</p>
       </div>
     </div>
 
     <div class="footer-right">
       <div class="col">
         <div class="info">
-          <i class="fa fa-envelope"></i>
-          <p><a href="mailto:rmf1312@hotmail.com">info@inmadrid.com</a></p>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:rmf1312@hotmail.com">info@inmadrid.com</a></p>
         </div>
         <div>
-          <i class="fa fa-map-marker"></i>
-          <p>Orense, 25, No. 1A<br>Madrid 28020 - Spain</p>
+            <i class="fa fa-map-marker"></i>
+            <p>Orense, 25, No. 1A<br>Madrid 28020 - Spain</p>
         </div>
         <div>
-          <i class="fa fa-phone"></i>
-          <p class="ml-1">+34 678910987</p>
+            <i class="fa fa-phone"></i>
+            <p class="ml-1">+34 678910987</p>
+        </div>
         </div>
       </div>
-    </div>
-    <div class="clearfix"></div>
-  </div>
+      <div class="clearfix"></div>
   </footer>
 
 

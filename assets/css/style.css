@@ -14,13 +14,16 @@ body, html {
 .navbar-brand {
   display: inline-block;
   list-style-type: none;
-  margin-left: 25px;
   font-size: 25px;
 }
 
 .dropdown-item:hover {
   background-color: #D9EF81;
   color: #434738;
+}
+
+button.btn.btn-sm.navbar-btn {
+  margin-right: 5px;
 }
 
 .nav-item button {
@@ -35,7 +38,7 @@ body, html {
 }
 
 .nav-link {
-  color: #434738;
+  color: #000000;
 }
 
 .nav-link a {
@@ -54,8 +57,9 @@ a:hover {
   border-radius: 8px;
 }
 
-.flag {
- display: inline-block;
+a#flag.nav-link {
+    margin-top: 9px;
+    margin-right: 5px;
 }
 
 /*Modal*/
