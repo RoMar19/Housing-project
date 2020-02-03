@@ -11,91 +11,23 @@ body, html {
 
 /*Navbar*/
 
-
-.navbar-nav {
-  position: relative;
-  top: 0;
-  left: 0;
-  padding-left: 0;
-  padding-right: 0;
-  z-index: 1;
-  margin-bottom: 5px;
-  width: 100%;
-  background-color: transparent;
-  text-align: center;
-}
-
-
-.nav-item {
-  display: inline-block;
-  list-style-type: none;
-  margin-left: 25px;
-  margin-top: 10px;
-}
-
-.nav-item-active {
+.navbar-brand {
   display: inline-block;
   list-style-type: none;
   margin-left: 25px;
   font-size: 25px;
 }
 
-
-.navbar-collapse {
-  display: flex;
-  float: right;
-}
-
-.navbar-collapse.show {
-  background-color: #f7f7f7;
-  opacity: 0.9;
-  margin-right: 380px;
-  text-align: center;
-  border-radius: 5px;
-  margin-left: 8px;
-  border-right-width: 20px;
-  padding-right: 20px;
-}
-
-
-.dropdown-menu {
-  left: 30%;
-}
-
-.dropdown-menu.show {
-  margin-top: 0px;
-  left: 333px;
-}
-
-.navbar.dropdownmenulink.navlink.dropdown-toggle {
-  width: 166px;
-}
-
-.navbar-expand-sm .narbar-nav .dropdown-menu {
-  position: static;
-}
-
-.dropdown-item {
-  background-color: #f7f7f7;
-}
-
-
 .dropdown-item:hover {
   background-color: #D9EF81;
   color: #434738;
 }
 
-
-.navbar-toggler {
-  margin-left: 10px;
-}
-
-
 .nav-item button {
   color: #434738;
   background-color: #b5d43c;
   border-color: #434738;
-  margin-top: 0px;
+  padding-right: 10px;
 }
 
 .nav-item button:hover {
@@ -110,12 +42,9 @@ body, html {
   margin-left: 10px;
 }
 
-
-
 a:link {
   color: #434738;
   padding: 5px 10px;
-  text-align: center;
   text-decoration: none;
   display: block;
 }
@@ -125,33 +54,10 @@ a:hover {
   border-radius: 8px;
 }
 
-.navbar-right {
-  display: inline-flex;
-  margin-top: 10px;
-  width: 40%;
-  position: relative;
-  top: 0;
-  right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  z-index: 1;
-  margin-bottom: 5px;
-  background-color: transparent;
-  text-align: center;
+.flag {
+ display: inline-block;
 }
 
-.navbar-right .nav-item {
-  width: 100%;
-  justify-content: space-around;
-  float: right;
-  margin-left: 15px; 
-}
-
-
-
-
-
- 
 /*Modal*/
 
 .modal-content i {
