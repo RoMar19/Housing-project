@@ -16,6 +16,13 @@
   <link rel="icon" href="assets/Images/favicon-32x32.png" type="image/png" />
   <!--Style CSS-->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <!-- Emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("user_beHlAh5GReL0LXJKxQclh");
+   })();
+  </script>   
 </head>
 
 <body>
@@ -157,7 +164,7 @@
       <img src="assets/Images/sittingroom.png">
     </div>  
     <div class="col-xs-12 col-sm-6">
-      <form action="/action_page.php">
+      <form onsubmit="return sendMail(this);" method="POST">
         <div class="form-row">
           <div class="col-25">
             <label for="fname">Nombre</label>
@@ -271,7 +278,9 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/sendmail.js"></script>
 
+  
 </body>
 
 </html>
