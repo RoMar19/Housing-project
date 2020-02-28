@@ -150,35 +150,18 @@
 </div>
 
 
-
+<div class="listing">
 <div id="data"class="container-selection-board">
   <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div class="suitch" style="left: 10px;>
-              <div class="icon">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <select>
-                <option>Madrid</option>
-                <option>Center</option>
-                <option>North</option>
-                <option>South</option>
-                <option>East</option>
-                <option>West</option>
-              </select>
-            </div>
-          
-           
-          
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="suitch">
               <div class="icon">
                 <i class="fa fa-home"></i>
               </div>
               <select>
-                  <option>Apartment</option>
-                  <option>Private Room</option>
-                  <option>Studio</option>
+                  <option value="type">Apartment</option>
+                  <option value="type">Private Room</option>
+                  <option value="type">Studio</option>
               </select>
             </div>
           </div>
@@ -247,17 +230,17 @@
         <a target="_blank" href="assets/Images/bedroom.jpg">
       <img src="assets/Images/bedroom.jpg" alt="Bedroom" width="300" height="150">
     </a>
-        <div class="desc">Apartment</div>
+        <div class="type">Apartment</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 2 Bedroom
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i>1 Bathroom
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Rent price: 1.500 €
         </span>
         <span><br>
@@ -276,17 +259,17 @@
         <a target="_blank" href="assets/Images/livingroom.jpg">
       <img src="assets/Images/livingroom.jpg" alt="Livingroom" width="300" height="150">
     </a>
-        <div class="desc">Studio</div>
+        <div class="type">Studio</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Bedroom
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i>1 Bathroom
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Rent price: 900 €
         </span>
          <span><br>
@@ -303,17 +286,17 @@
         <a target="_blank" href="assets/Images/bathroom.jpg">
       <img src="assets/Images/bathroom.jpg" alt="Bathroom Apartment" width="300" height="150">
     </a>
-        <div class="desc">Private room with Bathroom</div> 
+        <div class="type">Private room with Bathroom</div> 
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Bedroom
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i>1 Bathroom
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Rent price: 500 €
         </span>
         <span><br>
@@ -330,17 +313,17 @@
         <a target="_blank" href="assets/Images/studio.jpg">
       <img src="assets/Images/studio.jpg" alt="Studio" width="300" height="150">
     </a>
-        <div class="desc">Apartment</div>
+        <div class="type">Apartment</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Bedroom
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i>1 Bathroom
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Rent price: 1.200 €
         </span>
         <span><br>
@@ -423,7 +406,12 @@
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOLtR_9szBl7EVGkkAt3_UeWUiW4whytQ&callback=initMap"></script>
 <script src="assets/js/maps.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/js/searchform.js"></script>
+<script type="text/javascript" src="assets/js/listing.json"></script>
 
 </body>
 

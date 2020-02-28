@@ -3,8 +3,8 @@
     "type": "Apartment",
     "bedrooms": 2,
     "bathrooms": 1,
-    "area": "North",
-    "price": 1500,
+    "address": "lat: 40.408183, lng: -3.648301", 
+    "rentprice": 1500,
     "listing_title": "Apartment in Barrio del Pilar",
     "listing_text": "This is an apartment in the north are of Madrid with 2 bedrooms and 1 complete bathroom"
   },
@@ -12,8 +12,8 @@
     "type": "Studio",
     "bedrooms": 1,
     "bathrooms": 1,
-    "area": "South",
-    "price": 900,
+    "address": "lat: 40.48225, lng: -3.711614",
+    "rentprice": 900,
     "listing_title": "Studio for 1 or 2 persons",
     "listing_text": "This is cosy studio with complete bathroom"
   },
@@ -21,8 +21,8 @@
     "type": "Private room with bathroom",
     "bedrooms": 1,
     "bathrooms": 1,
-    "area": "West",
-    "price": 500,
+    "address": "lat: 40.3499985, lng: -3.766876",
+    "rentprice": 500,
     "listing_title": "Room in a share house of 3 bedrooms, private bath inside the room",
     "listing_text": "This is an apartment in the old indstrial and renovated area of Villaverde"
   },
@@ -30,9 +30,13 @@
     "type": "Apartment",
     "bedrooms": 1,
     "bathrooms": 1,
-    "area": "East",
+    "address": "lat: 40.4145661, lng: -3.7029622",
     "price": 1200,
     "listing_title": "Apartment with 1 bedroom and complete bathroom in Tribunal",
     "listing_text": "This is an apartment in the city center"
   }
 ]
+   
+
+
+

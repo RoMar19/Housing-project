@@ -505,12 +505,12 @@ button:hover {
   height: auto;
 }
 
-.desc {
+.type {
   padding: 15px;
   text-align: center;
 }
 
-.bed-room, .bath-room, .rent-price  {
+.bedrooms, .bathrooms, .rentprice  {
     text-align: center;
 }
 
