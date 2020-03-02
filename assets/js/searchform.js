@@ -1,7 +1,6 @@
-$("button").click(function() {
-$.getJSON("assets/js/listing.json", function(obj) {
-    $.each(obj, function(key, value) {
-        $("select").append("<option>"+value.type+"</option>");
-        });
-    });
-});
+document.getElementById("data").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("data").innerHTML =  "<h4>Your selection:</h4>";
+}
+

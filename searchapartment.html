@@ -17,6 +17,10 @@
   <link rel="icon" href="assets/Images/favicon-32x32.png" type="image/png" />
   <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/searchform.js" defer></script>
+  <script type="text/javascript" src="assets/js/listing.json"></script>
 </head>
 <body>
 
@@ -150,8 +154,8 @@
 </div>
 
 
-<div class="listing">
-<div id="data"class="container-selection-board">
+
+<div id="data" class="container-selection-board">
   <div class="row justify-content-center">
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="suitch">
@@ -159,9 +163,9 @@
                 <i class="fa fa-home"></i>
               </div>
               <select>
-                  <option value="type">Apartment</option>
-                  <option value="type">Private Room</option>
-                  <option value="type">Studio</option>
+                  <option id="data" class="listing" value="type" name="apartment">Apartment</option>
+                  <option id="data" class="listing" value="type" name="room">Private Room</option>
+                  <option id="data" class="listing" value="type" name="studio">Studio</option>
               </select>
             </div>
           </div>
@@ -172,10 +176,9 @@
                 <i class="fa fa-bed"></i>
               </div>
               <select>
-                <option>Min. Bedrooms</option>
-                <option>1 Bedroom</option>
-                <option>2 Bedrooms</option>
-                <option>3 Bedrooms</option>
+                <option id="data" class="listing" value="bedrooms" name="1">1 Bedroom</option>
+                <option id="data" class="listing" value="bedrooms" name="2">2 Bedrooms</option>
+                <option id="data" class="listing" value="bedrooms" name="3">3 Bedrooms</option>
               </select>
             </div>
           </div>
@@ -186,10 +189,9 @@
                 <i class="fa fa-shower"></i>
               </div>
               <select>
-                <option>Baths</option>
-                <option>1 Bathroom WC/Shower</option>
-                <option>2 Bathrooms WC/Shower</option>
-                <option>Private Bath</option>
+                <option id="data" class="listing" value="bathrooms" name="1">1 Bathroom WC/Shower</option>
+                <option id="data" class="listing" value="bathrooms" name="2">2 Bathrooms WC/Shower</option>
+                <option id="data" class="listing" value="bathrooms" name="1P">Private Bath</option>
               </select>
             </div>
           </div>
@@ -197,7 +199,7 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="slidecontainer">
               <div>Price range: From 300 € to 1.800 €.</div>
-              <input type="range" min="300" max="1800" value="700" class="slider" id="myRange">
+              <input id="data" type="range" min="300" max="1800" value="700" class="slider" id="myRange">
               
               
                 <div class="slider-touch-left" style="left: 0px;"><span></span></div>
@@ -212,14 +214,11 @@
           
           <div class="col-xl-3 col-lg-3 col-md-6>
             <div class="button">
-              <button type="submit">Search</button>
+              <button type="submit" onclick="myFunction()">Search</button>
             </div>
           </div>
   </div>
 </div>
-</div>
-
-   
 
 
 
@@ -243,6 +242,7 @@
         <div class="rentprice">
         Rent price: 1.500 €
         </span>
+        <div class="address" name="lat: 40.48225, lng: -3.711614"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 North, Madrid
@@ -272,6 +272,7 @@
         <div class="rentprice">
         Rent price: 900 €
         </span>
+        <div class="address" name="lat: 40.408183, lng: -3.648301"></div>
          <span><br>
         <i class="fa fa-map-marker"></i>
                 West, Madrid
@@ -299,6 +300,7 @@
         <div class="rentprice">
         Rent price: 500 €
         </span>
+        <div class="address" name="lat: 40.3499985, lng: -3.766876"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 South, Madrid
@@ -326,6 +328,7 @@
         <div class="rentprice">
         Rent price: 1.200 €
         </span>
+        <div class="address" name="lat: 40.4145661, lng: -3.7029622"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 Center, Madrid
@@ -406,13 +409,6 @@
 <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOLtR_9szBl7EVGkkAt3_UeWUiW4whytQ&callback=initMap"></script>
 <script src="assets/js/maps.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/js/searchform.js"></script>
-<script type="text/javascript" src="assets/js/listing.json"></script>
-
 </body>
 
 </html>
