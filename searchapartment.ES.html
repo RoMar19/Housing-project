@@ -17,6 +17,10 @@
   <link rel="icon" href="assets/Images/favicon-32x32.png" type="image/png" />
   <!-- Style CSS -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/searchform.js" defer></script>
+  <script type="text/javascript" src="assets/js/listing.json"></script>
 </head>
 
 <body>
@@ -151,19 +155,7 @@
 
 <div class="container-selection-board">
   <div class="row justify-content-center">
-          <div class="col-xl-3 col-lg-3 col-md-6">
-            <div class="suitch" style="left: 10px;>
-              <div class="icon">
-                <i class="fa fa-map-marker"></i>
-              </div>
-              <select>
-                <option>Madrid</option>
-                <option>Centro</option>
-                <option>Norte</option>
-                <option>Sur</option>
-                <option>Este</option>
-                <option>Oeste</option>
-              </select>
+   
             </div>
           
            
@@ -174,9 +166,9 @@
                 <i class="fa fa-home"></i>
               </div>
               <select>
-                  <option>Apartmento</option>
-                  <option>Habitación Privada</option>
-                  <option>Estudio</option>
+                  <option id="data" class="listing" value="type" name="apartment">Apartmento</option>
+                  <option id="data" class="listing" value="type" name="room">Habitación Privada</option>
+                  <option id="data" class="listing" value="type" name="studio">Estudio</option>
               </select>
             </div>
           </div>
@@ -187,10 +179,9 @@
                 <i class="fa fa-bed"></i>
               </div>
               <select>
-                <option>Num. Dormitorios</option>
-                <option>1 Dormitorio</option>
-                <option>2 Dormitorios</option>
-                <option>3 Dormitorios</option>
+                <option id="data" class="listing" value="bedrooms" name="1">1 Dormitorio</option>
+                <option id="data" class="listing" value="bedrooms" name="2">2 Dormitorios</option>
+                <option id="data" class="listing" value="bedrooms" name="3">3 Dormitorios</option>
               </select>
             </div>
           </div>
@@ -201,10 +192,9 @@
                 <i class="fa fa-shower"></i>
               </div>
               <select>
-                <option>Baños</option>
-                <option>1 Baño WC/Ducha</option>
-                <option>2 Baños WC/Ducha</option>
-                <option>Baño Privado</option>
+                <option id="data" class="listing" value="bathrooms" name="1">1 Baño WC/Ducha</option>
+                <option id="data" class="listing" value="bathrooms" name="2">2 Baños WC/Ducha</option>
+                <option id="data" class="listing" value="bathrooms" name="1P">Baño Privado</option>
               </select>
             </div>
           </div>
@@ -212,7 +202,7 @@
           <div class="col-xl-3 col-lg-3 col-md-6">
             <div class="slidecontainer">
               <div>Rango de precios: Desde 300 € hasta 1.800 €.</div>
-              <input type="range" min="300" max="1800" value="700" class="slider" id="myRange">
+              <input id="data" type="range" min="300" max="1800" value="700" class="slider" id="myRange">
               
               
                 <div class="slider-touch-left" style="left: 0px;"><span></span></div>
@@ -245,19 +235,20 @@
         <a target="_blank" href="assets/Images/bedroom.jpg">
       <img src="assets/Images/bedroom.jpg" alt="Bedroom" width="300" height="150">
     </a>
-        <div class="desc">Apartmento</div>
+        <div class="type">Apartmento</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 2 Dormitorios
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i> 1 Baño
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Precio: 1.500 €
         </span>
+        <div class="address" name="lat: 40.48225, lng: -3.711614"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 Madrid, Norte
@@ -274,20 +265,21 @@
         <a target="_blank" href="assets/Images/livingroom.jpg">
       <img src="assets/Images/livingroom.jpg" alt="Livingroom" width="300" height="150">
     </a>
-        <div class="desc">Estudio</div>
+        <div class="type">Estudio</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Dormitorio
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i> 1 Baño
         </div>
         </span>
         <span>
-        <div class="rent-price">
+        <div class="rentprice">
         Precio: 900 €
         </span>
-         <span><br>
+        <div class="address" name="lat: 40.408183, lng: -3.648301"></div>
+        <span><br>
         <i class="fa fa-map-marker"></i>
                 Madrid, Oeste
         </span> 
@@ -301,12 +293,12 @@
         <a target="_blank" href="assets/Images/bathroom.jpg">
       <img src="assets/Images/bathroom.jpg" alt="Bathroom Apartment" width="300" height="150">
     </a>
-        <div class="desc">Habitación Privada con Baño </div> 
+        <div class="type">Habitación Privada con Baño </div> 
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Dormitorio
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i> 1 Baño
         </div>
         </span>
@@ -314,6 +306,7 @@
         <div class="rent-price">
         Precio: 500 €
         </span>
+        <div class="address" name="lat: 40.3499985, lng: -3.766876"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 Madrid, Sur
@@ -328,12 +321,12 @@
         <a target="_blank" href="assets/Images/studio.jpg">
       <img src="assets/Images/studio.jpg" alt="Studio" width="300" height="150">
     </a>
-        <div class="desc">Apartmento</div>
+        <div class="type">Apartmento</div>
         <span>
-        <div class="bed-room">
+        <div class="bedrooms">
         <i class="fa fa-bed"></i> 1 Dormitorio
         </div>
-        <div class="bath-room">
+        <div class="bathrooms">
         <i class="fa fa-bath"></i> 1 Baño
         </div>
         </span>
@@ -341,6 +334,7 @@
         <div class="rent-price">
         Precio: 1.200 €
         </span>
+        <div class="address" name="lat: 40.4145661, lng: -3.7029622"></div>
         <span><br>
         <i class="fa fa-map-marker"></i>
                 Madrid, Centro

@@ -4,3 +4,4 @@ function myFunction() {
   document.getElementById("data").innerHTML =  "<h4>Your selection:</h4>";
 }
 
+
