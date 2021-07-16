@@ -7,7 +7,7 @@ Housing website with Welcome page, Search Apartment for tenants where I have add
  
 
 ## Demo ##
-Link to live demo:  https://romar19.github.io/Interactive-Frontend-Development-Milestone-Project/
+Link to live demo:  https://romar19.github.io/Housing-project/
 
 
 ## UX Process Design: ##
